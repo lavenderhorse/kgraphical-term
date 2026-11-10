@@ -14,6 +14,8 @@ log="$out/app-$backend.log"
 export DISPLAY=:99
 export QT_QPA_PLATFORM=xcb
 export LIBGL_ALWAYS_SOFTWARE=1
+export QT_FORCE_STDERR_LOGGING=1
+export QT_LOGGING_RULES="qt.rhi.*=true;qt.qpa.gl=true"
 export XDG_RUNTIME_DIR=/tmp/runtime-ci
 mkdir -p "$XDG_RUNTIME_DIR"
 chmod 700 "$XDG_RUNTIME_DIR"

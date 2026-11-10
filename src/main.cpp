@@ -12,6 +12,8 @@
 #include <QCommandLineParser>
 #include <QIcon>
 
+#include <cstdio>
+
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
@@ -56,7 +58,8 @@ int main(int argc, char *argv[])
                  qPrintable(rendererBackendName(requested)),
                  qPrintable(rendererBackendName(backend)));
     }
-    qInfo("kgraphical-term: renderer = %s", qPrintable(rendererBackendName(backend)));
+    // Plain stderr on purpose: release builds compile qInfo()/qDebug() out.
+    std::fprintf(stderr, "kgraphical-term: renderer = %s\n", qPrintable(rendererBackendName(backend)));
 
     auto *window = new MainWindow(parser.positionalArguments(), parser.value(QStringLiteral("workdir")), backend);
     window->show();

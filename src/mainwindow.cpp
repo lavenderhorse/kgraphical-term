@@ -43,6 +43,8 @@ MainWindow::MainWindow(const QStringList &command, const QString &workDir, Rende
     setCentralWidget(m_tabs);
 
     setupActions();
+    // Default size for the first run; setupGUI() restores a saved size over it.
+    resize(900, 560);
     setupGUI(Default, QStringLiteral(":/kgraphical-termui.rc"));
 
     addTerminalTab(true);

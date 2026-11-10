@@ -9,6 +9,8 @@
 
 #include <rhi/qshader.h>
 
+#include <cstdio>
+
 namespace
 {
 constexpr int kFloatsPerInstance = 16; // rect, uv, fg, bg
@@ -71,7 +73,8 @@ void GpuView::initialize(QRhiCommandBuffer *cb)
         return;
     }
 
-    qInfo("kgraphical-term: GPU renderer using %s", m_rhi->backendName());
+    // Plain stderr on purpose: release builds compile qInfo()/qDebug() out.
+    std::fprintf(stderr, "kgraphical-term: GPU renderer using %s\n", m_rhi->backendName());
 
     QRhiResourceUpdateBatch *updates = m_rhi->nextResourceUpdateBatch();
 
