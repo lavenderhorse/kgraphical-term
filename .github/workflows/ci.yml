@@ -1,0 +1,94 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# contents: write lets the job publish logs and screenshots to the ci-output branch.
+permissions:
+  contents: write
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and render (Arch Linux, Qt 6 + KF6)
+    runs-on: ubuntu-latest
+    # Arch ships Qt >= 6.7 and KDE Frameworks 6, which Ubuntu LTS releases do not.
+    container:
+      image: archlinux:latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      OUT: ci-out
+    steps:
+      - name: Install dependencies
+        run: |
+          pacman -Syu --noconfirm --needed \
+            base-devel cmake ninja extra-cmake-modules git \
+            qt6-base qt6-shadertools \
+            kcoreaddons kconfig kconfigwidgets ki18n kxmlgui kpty libvterm \
+            xorg-server-xvfb imagemagick mesa vulkan-swrast vulkan-icd-loader \
+            ttf-dejavu noto-fonts-emoji
+
+      - uses: actions/checkout@v4
+
+      - name: Prepare
+        run: |
+          mkdir -p "$OUT"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          chmod +x ci/*.sh
+
+      - name: Configure
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release 2>&1 | tee "$OUT/configure.log"
+
+      - name: Build
+        id: build
+        run: cmake --build build 2>&1 | tee "$OUT/build.log"
+
+      - name: Render with the software backend
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: ci/screenshot.sh software
+
+      - name: Render with the OpenGL backend (llvmpipe)
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: ci/screenshot.sh opengl
+
+      - name: Render with the Vulkan backend (lavapipe)
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: ci/screenshot.sh vulkan
+
+      - name: Upload logs and screenshots
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-output
+          path: ci-out/
+          if-no-files-found: warn
+
+      - name: Publish logs and screenshots to the ci-output branch
+        if: ${{ !cancelled() && github.event_name != 'pull_request' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          rm -rf /tmp/publish && mkdir /tmp/publish
+          cp -r "$OUT"/. /tmp/publish/
+          {
+            echo "# CI output"
+            echo
+            echo "Logs and screenshots from commit ${GITHUB_SHA}, run ${GITHUB_RUN_ID}."
+            echo "This branch is overwritten on every CI run."
+          } > /tmp/publish/README.md
+          cd /tmp/publish
+          git init -q -b ci-output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "CI output for ${GITHUB_SHA}"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin ci-output
