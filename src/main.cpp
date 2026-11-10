@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 
     KAboutData about(QStringLiteral("kgraphical-term"),
                      i18n("KGraphical-Term"),
-                     QStringLiteral(KGRAPHICALTERM_VERSION),
-                     i18n("A GPU-accelerated terminal emulator built on KDE Frameworks 6 and Qt 6."));
+                     QStringLiteral(KGRAPHICALTERM_VERSION));
+    about.setShortDescription(i18n("A GPU-accelerated terminal emulator built on KDE Frameworks 6 and Qt 6."));
     about.setDesktopFileName(QStringLiteral("kgraphical-term"));
     KAboutData::setApplicationData(about);
     app.setWindowIcon(QIcon::fromTheme(QStringLiteral("utilities-terminal")));

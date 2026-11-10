@@ -4,6 +4,7 @@
 #include "glyphatlas.h"
 
 #include <QRhiWidget>
+#include <rhi/qrhi.h>
 
 #include <memory>
 #include <vector>
