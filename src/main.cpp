@@ -18,6 +18,15 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
+    // The AppImage launcher points Qt at the bundled plugins through these
+    // variables. Qt has read them by now, so remove them: the shell started in
+    // each tab, and any Qt program run from it, must not inherit them.
+    if (qEnvironmentVariableIsSet("APPDIR")) {
+        qunsetenv("QT_PLUGIN_PATH");
+        qunsetenv("QT_QPA_PLATFORM_PLUGIN_PATH");
+        qunsetenv("APPDIR");
+    }
+
     KLocalizedString::setApplicationDomain("kgraphical-term");
 
     KAboutData about(QStringLiteral("kgraphical-term"),

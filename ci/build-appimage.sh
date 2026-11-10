@@ -33,6 +33,7 @@ cd "$root/appimage-out"
     --appdir "$root/AppDir" \
     --desktop-file "$root/AppDir/usr/share/applications/kgraphical-term.desktop" \
     --icon-file "$root/AppDir/usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg" \
+    --custom-apprun "$root/ci/AppRun" \
     --plugin qt \
     --output appimage
 

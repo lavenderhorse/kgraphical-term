@@ -1,0 +1,17 @@
+#!/bin/sh
+# AppRun for the kgraphical-term AppImage.
+#
+# linuxdeploy's default AppRun is only a symlink to the binary, which leaves Qt
+# unable to find the bundled plugins. Point it at them explicitly.
+#
+# LD_LIBRARY_PATH is deliberately NOT set: the bundled libraries are found
+# through the RPATHs linuxdeploy writes, and an exported LD_LIBRARY_PATH would
+# leak into the shell (and everything run from it) inside the terminal.
+HERE="$(dirname "$(readlink -f "$0")")"
+
+export APPDIR="$HERE"
+export QT_PLUGIN_PATH="$HERE/usr/plugins"
+export QT_QPA_PLATFORM_PLUGIN_PATH="$HERE/usr/plugins/platforms"
+export XDG_DATA_DIRS="$HERE/usr/share:${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+
+exec "$HERE/usr/bin/kgraphical-term" "$@"
