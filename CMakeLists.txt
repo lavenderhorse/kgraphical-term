@@ -82,5 +82,6 @@ target_link_libraries(kgraphical-term PRIVATE
 
 install(TARGETS kgraphical-term ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 install(PROGRAMS data/kgraphical-term.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES data/kgraphical-term.svg DESTINATION ${KDE_INSTALL_DATADIR}/icons/hicolor/scalable/apps)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

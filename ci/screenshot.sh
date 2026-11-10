@@ -2,14 +2,19 @@
 # Runs kgraphical-term under Xvfb with the given rendering backend, screenshots
 # the screen, and checks that something was actually drawn.
 #
-# Usage: ci/screenshot.sh <software|opengl|vulkan>
+# Usage: [BIN=path/to/binary] ci/screenshot.sh <software|opengl|vulkan> [label]
+#
+# BIN defaults to the build tree's binary; `label` names the output files and
+# defaults to the backend (use it to screenshot e.g. the AppImage separately).
 set -uo pipefail
 
-backend="${1:?usage: screenshot.sh <software|opengl|vulkan>}"
+backend="${1:?usage: screenshot.sh <software|opengl|vulkan> [label]}"
+label="${2:-$backend}"
+bin="${BIN:-build/bin/kgraphical-term}"
 out="${OUT:-ci-out}"
 mkdir -p "$out"
-shot="$out/screenshot-$backend.png"
-log="$out/app-$backend.log"
+shot="$out/screenshot-$label.png"
+log="$out/app-$label.log"
 
 export DISPLAY=:99
 export QT_QPA_PLATFORM=xcb
@@ -21,7 +26,7 @@ mkdir -p "$XDG_RUNTIME_DIR"
 chmod 700 "$XDG_RUNTIME_DIR"
 
 app=""
-Xvfb :99 -screen 0 1024x640x24 -nolisten tcp >"$out/xvfb-$backend.log" 2>&1 &
+Xvfb :99 -screen 0 1024x640x24 -nolisten tcp >"$out/xvfb-$label.log" 2>&1 &
 xvfb=$!
 cleanup() {
     [ -n "$app" ] && kill "$app" 2>/dev/null
@@ -38,7 +43,7 @@ fail() {
     exit 1
 }
 
-build/bin/kgraphical-term --renderer "$backend" -w /tmp -- bash "$PWD/ci/demo.sh" >"$log" 2>&1 &
+"$bin" --renderer "$backend" -w /tmp -- bash "$PWD/ci/demo.sh" >"$log" 2>&1 &
 app=$!
 sleep 10
 

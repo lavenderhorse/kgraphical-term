@@ -3,20 +3,21 @@ name: CI
 on:
   push:
     branches: [main]
+    tags: ['v*']
   pull_request:
   workflow_dispatch:
 
-# contents: write lets the job publish logs and screenshots to the ci-output branch.
+# contents: write lets the job publish releases and the ci-output branch.
 permissions:
   contents: write
 
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
-    name: Build and render (Arch Linux, Qt 6 + KF6)
+    name: Build, render, package (Arch Linux, Qt 6 + KF6)
     runs-on: ubuntu-latest
     # Arch ships Qt >= 6.7 and KDE Frameworks 6, which Ubuntu LTS releases do not.
     container:
@@ -31,10 +32,11 @@ jobs:
         run: |
           pacman -Syu --noconfirm --needed \
             base-devel cmake ninja extra-cmake-modules git \
-            qt6-base qt6-shadertools \
+            qt6-base qt6-shadertools qt6-wayland \
             kcoreaddons kconfig kconfigwidgets ki18n kxmlgui kpty libvterm \
             xorg-server-xvfb imagemagick mesa vulkan-swrast vulkan-icd-loader \
-            ttf-dejavu noto-fonts-emoji
+            ttf-dejavu noto-fonts-emoji \
+            wget file patchelf desktop-file-utils squashfs-tools fuse2
 
       - uses: actions/checkout@v4
 
@@ -63,12 +65,45 @@ jobs:
         if: ${{ !cancelled() && steps.build.outcome == 'success' }}
         run: ci/screenshot.sh vulkan
 
-      - name: Upload logs and screenshots
+      - name: Package AppImage
+        id: appimage
+        if: ${{ !cancelled() && steps.build.outcome == 'success' }}
+        run: ci/build-appimage.sh 2>&1 | tee "$OUT/appimage.log"
+
+      - name: Test the AppImage
+        id: appimage-test
+        if: ${{ !cancelled() && steps.appimage.outcome == 'success' }}
+        env:
+          APPIMAGE_EXTRACT_AND_RUN: '1'
+        run: |
+          appimage="$(ls "$PWD"/appimage-out/*.AppImage | head -n 1)"
+          BIN="$appimage" ci/screenshot.sh opengl appimage
+
+      - name: Write release notes
+        if: ${{ !cancelled() && steps.appimage-test.outcome == 'success' }}
+        run: |
+          {
+            echo "Automated AppImage build of commit \`${GITHUB_SHA::7}\`."
+            echo
+            echo "Built on Arch Linux (glibc $(ldd --version | head -n 1 | awk '{print $NF}'), Qt $(qmake6 -query QT_VERSION))."
+            echo "The AppImage bundles Qt, KDE Frameworks and libvterm, and uses your system's graphics"
+            echo "drivers, so it needs a Linux distribution with at least that glibc version."
+            echo
+            echo '```sh'
+            echo 'chmod +x kgraphical-term-*-x86_64.AppImage'
+            echo './kgraphical-term-*-x86_64.AppImage                       # auto: OpenGL, then Vulkan, then software'
+            echo './kgraphical-term-*-x86_64.AppImage --renderer vulkan'
+            echo '```'
+          } > release-notes.md
+
+      - name: Upload logs, screenshots and AppImage
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4
         with:
           name: ci-output
-          path: ci-out/
+          path: |
+            ci-out/
+            appimage-out/*.AppImage
           if-no-files-found: warn
 
       - name: Publish logs and screenshots to the ci-output branch
@@ -92,3 +127,29 @@ jobs:
           git commit -q -m "CI output for ${GITHUB_SHA}"
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push --force origin ci-output
+
+      # Every push to main refreshes a rolling "continuous" pre-release.
+      - name: Move the continuous tag
+        if: ${{ success() && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        run: |
+          git tag -f continuous "$GITHUB_SHA"
+          git push --force origin refs/tags/continuous
+
+      - name: Publish the continuous release
+        if: ${{ success() && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: continuous
+          name: Continuous build
+          prerelease: true
+          body_path: release-notes.md
+          files: appimage-out/*.AppImage
+
+      # Pushing a v* tag publishes a regular release.
+      - name: Publish a versioned release
+        if: ${{ success() && startsWith(github.ref, 'refs/tags/v') }}
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ github.ref_name }}
+          body_path: release-notes.md
+          files: appimage-out/*.AppImage

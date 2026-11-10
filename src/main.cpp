@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     about.setShortDescription(i18n("A GPU-accelerated terminal emulator built on KDE Frameworks 6 and Qt 6."));
     about.setDesktopFileName(QStringLiteral("kgraphical-term"));
     KAboutData::setApplicationData(about);
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("utilities-terminal")));
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("kgraphical-term"), QIcon::fromTheme(QStringLiteral("utilities-terminal"))));
 
     QCommandLineParser parser;
     about.setupCommandLine(&parser);
