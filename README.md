@@ -22,6 +22,20 @@ The AppImage bundles Qt, KDE Frameworks and libvterm, and uses your system's gra
 It is built on Arch Linux, so it needs a distribution with a recent glibc (the exact version is in
 each release's notes).
 
+### Arch Linux
+
+A `PKGBUILD` that builds the latest commit lives in [`packaging/arch`](packaging/arch):
+
+```sh
+git clone https://github.com/lavenderhorse/kgraphical-term
+cd kgraphical-term/packaging/arch
+makepkg -si
+```
+
+It installs the binary, desktop entry, icon and license as `kgraphical-term-git`. CI builds,
+lints (namcap) and install-tests it on every push. For the AUR, generate the metadata with
+`makepkg --printsrcinfo > .SRCINFO`.
+
 ## Screenshots
 
 Rendered in CI under Xvfb, with Mesa's software rasterisers standing in for a GPU

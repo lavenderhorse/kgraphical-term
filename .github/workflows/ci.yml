@@ -16,6 +16,61 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
+  pkgbuild:
+    name: Arch package (makepkg)
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Install packaging tools
+        run: pacman -Syu --noconfirm --needed base-devel git sudo namcap
+
+      - uses: actions/checkout@v4
+
+      # makepkg refuses to run as root, so build as an unprivileged user.
+      - name: Build the package
+        id: makepkg
+        run: |
+          useradd -m builder
+          echo 'builder ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/builder
+          cp -r packaging/arch /home/builder/pkg
+          chown -R builder:builder /home/builder/pkg
+          cd /home/builder/pkg
+          su builder -c 'makepkg -sf --noconfirm' 2>&1 | tee /tmp/makepkg.log
+
+      - name: Show the build log tail on failure
+        if: ${{ failure() && steps.makepkg.outcome == 'failure' }}
+        run: |
+          tail -n 40 /tmp/makepkg.log | sed -e 's/\r//g' -e 's/%/%25/g' -e ':a;N;$!ba;s/\n/%0A/g' \
+            | sed 's/^/::error title=makepkg failed::/'
+
+      - name: Lint with namcap
+        run: |
+          cd /home/builder/pkg
+          namcap PKGBUILD || true
+          for pkg in *.pkg.tar.zst; do
+            namcap "$pkg" || true
+            echo "--- contents of $pkg"
+            pacman -Qlp "$pkg" | grep -v '/$' | head -n 40
+          done
+
+      - name: Install the package and run it
+        run: |
+          pacman -U --noconfirm /home/builder/pkg/*.pkg.tar.zst
+          QT_QPA_PLATFORM=offscreen kgraphical-term --version
+          test -f /usr/share/applications/kgraphical-term.desktop
+          test -f /usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg
+          test -f /usr/share/licenses/kgraphical-term-git/LICENSE
+
+      - name: Upload the package
+        uses: actions/upload-artifact@v4
+        with:
+          name: arch-package
+          path: /home/builder/pkg/*.pkg.tar.zst
+
   build:
     name: Build, render, package (Arch Linux, Qt 6 + KF6)
     runs-on: ubuntu-latest

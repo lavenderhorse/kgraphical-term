@@ -1,0 +1,61 @@
+# Maintainer: lavenderhorse
+#
+# Builds the latest commit from git. Once the project has tagged releases, a
+# release variant can build from the tag tarball instead.
+
+pkgname=kgraphical-term-git
+_name=kgraphical-term
+pkgver=0.1.0.r0.g0000000
+pkgrel=1
+pkgdesc='GPU-accelerated (OpenGL/Vulkan) terminal emulator built on KDE Frameworks 6 and Qt 6'
+arch=(x86_64)
+url='https://github.com/lavenderhorse/kgraphical-term'
+license=(MIT)
+depends=(
+  gcc-libs
+  glibc
+  hicolor-icon-theme
+  kconfig
+  kconfigwidgets
+  kcoreaddons
+  ki18n
+  kpty
+  kxmlgui
+  libvterm
+  qt6-base
+)
+makedepends=(
+  cmake
+  extra-cmake-modules
+  git
+  ninja
+  qt6-shadertools
+)
+optdepends=(
+  'qt6-wayland: run natively on Wayland'
+  'vulkan-icd-loader: Vulkan rendering backend (also needs a Vulkan driver for your GPU)'
+  'noto-fonts-emoji: colour emoji'
+)
+provides=("$_name=${pkgver%%.r*}")
+conflicts=("$_name")
+source=("git+$url.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$_name"
+  local version
+  version=$(sed -n 's/^project(kgraphical-term VERSION \([0-9.]*\).*/\1/p' CMakeLists.txt)
+  printf '%s.r%s.g%s' "$version" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cmake -S "$_name" -B build -G Ninja \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr
+  cmake --build build
+}
+
+package() {
+  DESTDIR="$pkgdir" cmake --install build
+  install -Dm644 "$_name/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname/"
+}
