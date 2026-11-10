@@ -271,7 +271,7 @@ void GpuView::render(QRhiCommandBuffer *cb)
     updates->updateDynamicBuffer(m_uniformBuffer.get(), 0, 64, mvp.constData());
 
     const int instanceCount = int(m_instances.size() / kFloatsPerInstance);
-    const int bytes = instanceCount * kBytesPerInstance;
+    const quint32 bytes = quint32(instanceCount) * quint32(kBytesPerInstance);
     if (bytes > m_instanceBuffer->size()) {
         m_instanceBuffer->setSize(qMax(bytes, m_instanceBuffer->size() * 2));
         m_instanceBuffer->create();

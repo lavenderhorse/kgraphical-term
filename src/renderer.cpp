@@ -5,13 +5,9 @@
 #include "softwareview.h"
 #include "terminalsession.h"
 
+#include <QLibrary>
 #include <QOffscreenSurface>
 #include <QOpenGLContext>
-#include <QtGui/qtguiglobal.h>
-
-#if QT_CONFIG(vulkan)
-#include <QVulkanInstance>
-#endif
 
 namespace
 {
@@ -31,16 +27,38 @@ bool probeOpenGL()
     return ok;
 }
 
+// Checks that a Vulkan loader exists and that it can see at least one physical
+// device. Done by hand through the loader's C API so it needs no Vulkan headers
+// and no particular Qt Vulkan configuration.
 bool probeVulkan()
 {
-#if QT_CONFIG(vulkan)
-    QVulkanInstance instance;
-    const bool ok = instance.create();
-    instance.destroy();
+    using CreateInstanceFn = int (*)(const void *createInfo, const void *allocator, void **instance);
+    using DestroyInstanceFn = void (*)(void *instance, const void *allocator);
+    using EnumeratePhysicalDevicesFn = int (*)(void *instance, unsigned *count, void *devices);
+
+    QLibrary loader(QStringLiteral("vulkan"), 1);
+    if (!loader.load()) {
+        return false;
+    }
+    const auto create = reinterpret_cast<CreateInstanceFn>(loader.resolve("vkCreateInstance"));
+    const auto destroy = reinterpret_cast<DestroyInstanceFn>(loader.resolve("vkDestroyInstance"));
+    const auto enumerate = reinterpret_cast<EnumeratePhysicalDevicesFn>(loader.resolve("vkEnumeratePhysicalDevices"));
+    if (!create || !destroy || !enumerate) {
+        return false;
+    }
+
+    // A zeroed VkInstanceCreateInfo with sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO (1).
+    alignas(8) char createInfo[128] = {};
+    *reinterpret_cast<int *>(createInfo) = 1;
+
+    void *instance = nullptr;
+    if (create(createInfo, nullptr, &instance) != 0 || !instance) {
+        return false;
+    }
+    unsigned deviceCount = 0;
+    const bool ok = enumerate(instance, &deviceCount, nullptr) == 0 && deviceCount > 0;
+    destroy(instance, nullptr);
     return ok;
-#else
-    return false;
-#endif
 }
 } // namespace
 
