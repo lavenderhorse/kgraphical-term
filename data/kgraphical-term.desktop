@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=KGraphical-Term
+GenericName=Terminal Emulator
+Comment=A KDE Frameworks and Qt6 terminal emulator
+Exec=kgraphical-term
+Icon=utilities-terminal
+Terminal=false
+Categories=Qt;KDE;System;TerminalEmulator;
+Keywords=terminal;shell;console;command line;
+StartupNotify=true
+StartupWMClass=kgraphical-term

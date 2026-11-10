@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gui SYSTEM "kpartgui.dtd">
+<gui name="kgraphical-term" version="1">
+  <MenuBar>
+    <Menu name="file">
+      <text>&amp;File</text>
+      <Action name="new_tab"/>
+      <Action name="close_tab"/>
+      <Separator/>
+      <Action name="file_quit"/>
+    </Menu>
+    <Menu name="edit">
+      <text>&amp;Edit</text>
+      <Action name="copy_selection"/>
+      <Action name="paste_clipboard"/>
+    </Menu>
+    <Menu name="view">
+      <text>&amp;View</text>
+      <Action name="prev_tab"/>
+      <Action name="next_tab"/>
+      <Separator/>
+      <Action name="view_zoom_in"/>
+      <Action name="view_zoom_out"/>
+      <Action name="zoom_reset"/>
+      <Action name="choose_font"/>
+      <Separator/>
+      <Action name="toggle_fullscreen"/>
+    </Menu>
+  </MenuBar>
+</gui>
