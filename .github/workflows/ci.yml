@@ -70,11 +70,24 @@ jobs:
         if: ${{ !cancelled() && steps.build.outcome == 'success' }}
         run: ci/build-appimage.sh 2>&1 | tee "$OUT/appimage.log"
 
+      - name: Inspect the AppImage
+        if: ${{ !cancelled() && steps.appimage.outcome == 'success' }}
+        run: |
+          {
+            echo "--- AppDir top level"; ls -la AppDir
+            echo "--- apprun-hooks"; ls -la AppDir/apprun-hooks 2>&1
+            for f in AppDir/apprun-hooks/*; do echo "--- $f"; cat "$f"; done
+            echo "--- qt.conf files"; find AppDir -name qt.conf -print -exec cat {} \;
+            echo "--- usr/plugins"; ls AppDir/usr/plugins 2>&1
+            echo "--- AppRun"; ls -la AppDir/AppRun; file AppDir/AppRun
+          } 2>&1 | tee "$OUT/appimage-inspect.log"
+
       - name: Test the AppImage
         id: appimage-test
         if: ${{ !cancelled() && steps.appimage.outcome == 'success' }}
         env:
           APPIMAGE_EXTRACT_AND_RUN: '1'
+          QT_DEBUG_PLUGINS: '1'
         run: |
           appimage="$(ls "$PWD"/appimage-out/*.AppImage | head -n 1)"
           BIN="$appimage" ci/screenshot.sh opengl appimage
