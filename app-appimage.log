@@ -1,0 +1,31 @@
+qt.qpa.gl: Choosing xcb gl-integration based on following priority
+ QList("xcb_glx", "xcb_egl")
+qt.qpa.gl: Xcb GLX gl-integration created
+qt.qpa.gl: Xcb GLX gl-integration successfully initialized
+kgraphical-term: renderer = opengl
+qt.qpa.gl: Requested format before FBConfig/Visual selection: QSurfaceFormat(version 2.0, options QFlags<QSurfaceFormat::FormatOption>(), depthBufferSize -1, redBufferSize 8, greenBufferSize 8, blueBufferSize 8, alphaBufferSize -1, stencilBufferSize -1, samples -1, swapBehavior QSurfaceFormat::DefaultSwapBehavior, swapInterval 1, colorSpace QColorSpace(), profile  QSurfaceFormat::NoProfile)
+qt.qpa.gl: Available GLX extensions: GLX_ARB_context_flush_control GLX_ARB_create_context GLX_ARB_create_context_no_error GLX_ARB_create_context_profile GLX_ARB_fbconfig_float GLX_ARB_framebuffer_sRGB GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_create_context_es2_profile GLX_EXT_create_context_es_profile GLX_EXT_fbconfig_packed_float GLX_EXT_framebuffer_sRGB GLX_EXT_no_config_context GLX_EXT_texture_from_pixmap GLX_EXT_visual_info GLX_EXT_visual_rating GLX_MESA_copy_sub_buffer GLX_MESA_gl_interop GLX_MESA_query_renderer GLX_SGIS_multisample GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGIX_visual_select_group GLX_SGI_make_current_read 
+qt.qpa.gl: Got format: QSurfaceFormat(version 2.0, options QFlags<QSurfaceFormat::FormatOption>(), depthBufferSize 0, redBufferSize 8, greenBufferSize 8, blueBufferSize 8, alphaBufferSize 0, stencilBufferSize 0, samples -1, swapBehavior QSurfaceFormat::DefaultSwapBehavior, swapInterval 1, colorSpace QColorSpace(), profile  QSurfaceFormat::NoProfile)
+qt.rhi.general: Created OpenGL context QSurfaceFormat(version 4.6, options QFlags<QSurfaceFormat::FormatOption>(DeprecatedFunctions), depthBufferSize 0, redBufferSize 8, greenBufferSize 8, blueBufferSize 8, alphaBufferSize 0, stencilBufferSize 0, samples -1, swapBehavior QSurfaceFormat::DefaultSwapBehavior, swapInterval 1, colorSpace QColorSpace(), profile  QSurfaceFormat::CompatibilityProfile)
+qt.rhi.general: OpenGL VENDOR: Mesa RENDERER: llvmpipe (LLVM 23.1.4, 256 bits) VERSION: 4.6 (Compatibility Profile) Mesa 26.2.6-arch1.1
+qt.rhi.rub: [rub] new offscreen frame
+kgraphical-term: GPU renderer using OpenGL
+[rub] release to pool upd.batch # 0 / bufferOps active 1 of 1 data 32 largeAlloc 0 textureOps active 0 of 0
+[rub] release to pool upd.batch # 1 / bufferOps active 2 of 2 data 384 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new offscreen frame
+[rub] release to pool upd.batch # 2 / bufferOps active 2 of 2 data 384 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new offscreen frame
+[rub] release to pool upd.batch # 3 / bufferOps active 2 of 2 data 384 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new offscreen frame
+[rub] QRhiBufferData 0x7ffd85ba4818/0x5646343dc790 new large data allocation 0 -> 39744
+[rub] release to pool upd.batch # 0 / bufferOps active 2 of 2 data 39808 largeAlloc 39744 textureOps active 90 of 90
+qt.rhi.rub: [rub] new frame
+[rub] release to pool upd.batch # 1 / bufferOps active 9 of 9 data 360 largeAlloc 0 textureOps active 1 of 1
+qt.rhi.rub: [rub] new frame
+[rub] release to pool upd.batch # 2 / bufferOps active 8 of 8 data 240 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new frame
+[rub] release to pool upd.batch # 3 / bufferOps active 8 of 8 data 240 largeAlloc 0 textureOps active 0 of 0
+The X11 connection broke (error 1). Did the X11 server die?
+The X11 connection broke: I/O error (code 1)
+XIO:  fatal IO error 2 (No such file or directory) on X server ":99"
+      after 487 requests (484 known processed) with 0 events remaining.

@@ -1,0 +1,16 @@
+[1/16] Generating .qsb/cell.vert.qsb
+[2/16] Generating .qsb/cell.frag.qsb
+[3/16] Automatic MOC for target kgraphical-term
+[4/16] Running rcc for resource ui
+[5/16] Running rcc for resource shaders
+[6/16] Building CXX object CMakeFiles/kgraphical-term.dir/src/glyphatlas.cpp.o
+[7/16] Building CXX object CMakeFiles/kgraphical-term.dir/src/softwareview.cpp.o
+[8/16] Building CXX object CMakeFiles/kgraphical-term.dir/kgraphical-term_autogen/mocs_compilation.cpp.o
+[9/16] Building CXX object CMakeFiles/kgraphical-term.dir/src/main.cpp.o
+[10/16] Building CXX object CMakeFiles/kgraphical-term.dir/build/.qt/rcc/qrc_ui.cpp.o
+[11/16] Building CXX object CMakeFiles/kgraphical-term.dir/src/mainwindow.cpp.o
+[12/16] Building CXX object CMakeFiles/kgraphical-term.dir/build/.qt/rcc/qrc_shaders.cpp.o
+[13/16] Building CXX object CMakeFiles/kgraphical-term.dir/src/terminalsession.cpp.o
+[14/16] Building CXX object CMakeFiles/kgraphical-term.dir/src/renderer.cpp.o
+[15/16] Building CXX object CMakeFiles/kgraphical-term.dir/src/gpuview.cpp.o
+[16/16] Linking CXX executable bin/kgraphical-term

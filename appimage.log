@@ -1,0 +1,651 @@
+Downloading https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
+Downloading https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
+Downloading https://github.com/linuxdeploy/linuxdeploy-plugin-appimage/releases/download/continuous/linuxdeploy-plugin-appimage-x86_64.AppImage
+-- Install configuration: "Release"
+-- Installing: /__w/kgraphical-term/kgraphical-term/AppDir/usr/bin/kgraphical-term
+-- Installing: /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/kgraphical-term.desktop
+-- Installing: /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg
+linuxdeploy version 1-alpha (git commit ID 07333c6), GitHub actions build 373 built on 2026-11-01 21:00:06 UTC
+
+-- Creating basic AppDir structure -- 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/bin/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/pixmaps/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/16x16/apps/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/32x32/apps/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/64x64/apps/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/128x128/apps/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/256x256/apps/ 
+Creating directory /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/scalable/apps/ 
+
+-- Deploying dependencies for existing files in AppDir -- 
+Deploying dependencies for ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/bin/kgraphical-term 
+Deploying shared library /usr/lib/libKF6XmlGui.so.6
+Deploying shared library /usr/lib/libKF6Pty.so.6
+Deploying shared library /usr/lib/libxkbcommon.so.0
+Deploying shared library /usr/lib/libKF6ConfigWidgets.so.6
+Deploying shared library /usr/lib/libKF6ColorScheme.so.6
+Deploying shared library /usr/lib/libKF6ConfigGui.so.6
+Deploying shared library /usr/lib/libKF6ConfigCore.so.6
+Deploying shared library /usr/lib/libKF6WidgetsAddons.so.6
+Deploying shared library /usr/lib/libQt6Widgets.so.6
+Deploying shared library /usr/lib/libQt6Xml.so.6
+Deploying shared library /usr/lib/libKF6GuiAddons.so.6
+Deploying shared library /usr/lib/libQt6Gui.so.6
+Skipping deployment of blacklisted library /usr/lib/libGLX.so.0 
+Skipping deployment of blacklisted library /usr/lib/libOpenGL.so.0 
+Deploying shared library /usr/lib/libKF6CoreAddons.so.6
+Deploying shared library /usr/lib/libQt6DBus.so.6
+Deploying shared library /usr/lib/libKF6I18n.so.6
+Deploying shared library /usr/lib/libQt6Core.so.6
+Deploying shared library /usr/lib/libvterm.so.0
+Skipping deployment of blacklisted library /usr/lib/libstdc++.so.6 
+Skipping deployment of blacklisted library /usr/lib/libm.so.6 
+Skipping deployment of blacklisted library /usr/lib/libgcc_s.so.1 
+Skipping deployment of blacklisted library /usr/lib/libc.so.6 
+Deploying shared library /usr/lib/libKF6GlobalAccel.so.6
+Deploying shared library /usr/lib/libQt6PrintSupport.so.6
+Deploying shared library /usr/lib/libKF6ItemViews.so.6
+Deploying shared library /usr/lib/libKF6IconWidgets.so.6
+Deploying shared library /usr/lib/libKF6IconThemes.so.6
+Deploying shared library /usr/lib/libKF6Codecs.so.6
+Deploying shared library /usr/lib/libQt6WaylandClient.so.6
+Skipping deployment of blacklisted library /usr/lib/libwayland-client.so.0 
+Skipping deployment of blacklisted library /usr/lib/libX11.so.6 
+Skipping deployment of blacklisted library /usr/lib/libEGL.so.1 
+Deploying shared library /usr/lib/libglib-2.0.so.0
+Deploying shared library /usr/lib/libpng16.so.16
+Skipping deployment of blacklisted library /usr/lib/libharfbuzz.so.0 
+Deploying shared library /usr/lib/libmd4c.so.0
+Skipping deployment of blacklisted library /usr/lib/libfreetype.so.6 
+Skipping deployment of blacklisted library /usr/lib/libfontconfig.so.1 
+Skipping deployment of blacklisted library /usr/lib/libz.so.1 
+Skipping deployment of blacklisted library /usr/lib/libGLdispatch.so.0 
+Deploying shared library /usr/lib/libudev.so.1
+Deploying shared library /usr/lib/libmount.so.1
+Deploying shared library /usr/lib/libdbus-1.so.3
+Deploying shared library /usr/lib/liburing.so.2
+Deploying shared library /usr/lib/libicui18n.so.78
+Deploying shared library /usr/lib/libicuuc.so.78
+Deploying shared library /usr/lib/libsystemd.so.0
+Deploying shared library /usr/lib/libdouble-conversion.so.3
+Deploying shared library /usr/lib/libb2.so.1
+Deploying shared library /usr/lib/libpcre2-16.so.0
+Deploying shared library /usr/lib/libcrypto.so.3
+Deploying shared library /usr/lib/libzstd.so.1
+Deploying shared library /usr/lib/libKF6Archive.so.6
+Deploying shared library /usr/lib/libKF6BreezeIcons.so.6
+Deploying shared library /usr/lib/libwayland-cursor.so.0
+Deploying shared library /usr/lib/libffi.so.8
+Skipping deployment of blacklisted library /usr/lib/libxcb.so.1 
+Deploying shared library /usr/lib/libpcre2-8.so.0
+Deploying shared library /usr/lib/libgraphite2.so.3
+Deploying shared library /usr/lib/libbz2.so.1.0
+Deploying shared library /usr/lib/libbrotlidec.so.1
+Skipping deployment of blacklisted library /usr/lib/libexpat.so.1 
+Deploying shared library /usr/lib/libblkid.so.1
+Deploying shared library /usr/lib/libicudata.so.78
+Deploying shared library /usr/lib/libgomp.so.1
+Deploying shared library /usr/lib/libbrotlienc.so.1
+Deploying shared library /usr/lib/liblzma.so.5
+Deploying shared library /usr/lib/libXau.so.6
+Deploying shared library /usr/lib/libXdmcp.so.6
+Deploying shared library /usr/lib/libbrotlicommon.so.1
+
+-- Copying files into AppDir -- 
+Copying file /usr/lib/libKF6Archive.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6Archive.so.6 
+Copying file /usr/lib/libKF6BreezeIcons.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6BreezeIcons.so.6 
+Copying file /usr/lib/libKF6Codecs.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6Codecs.so.6 
+Copying file /usr/lib/libKF6ColorScheme.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ColorScheme.so.6 
+Copying file /usr/lib/libKF6ConfigCore.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ConfigCore.so.6 
+Copying file /usr/lib/libKF6ConfigGui.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ConfigGui.so.6 
+Copying file /usr/lib/libKF6ConfigWidgets.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ConfigWidgets.so.6 
+Copying file /usr/lib/libKF6CoreAddons.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6CoreAddons.so.6 
+Copying file /usr/lib/libKF6GlobalAccel.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6GlobalAccel.so.6 
+Copying file /usr/lib/libKF6GuiAddons.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6GuiAddons.so.6 
+Copying file /usr/lib/libKF6I18n.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6I18n.so.6 
+Copying file /usr/lib/libKF6IconThemes.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6IconThemes.so.6 
+Copying file /usr/lib/libKF6IconWidgets.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6IconWidgets.so.6 
+Copying file /usr/lib/libKF6ItemViews.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ItemViews.so.6 
+Copying file /usr/lib/libKF6Pty.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6Pty.so.6 
+Copying file /usr/lib/libKF6WidgetsAddons.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6WidgetsAddons.so.6 
+Copying file /usr/lib/libKF6XmlGui.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6XmlGui.so.6 
+Copying file /usr/lib/libQt6Core.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Core.so.6 
+Copying file /usr/lib/libQt6DBus.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6DBus.so.6 
+Copying file /usr/lib/libQt6Gui.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Gui.so.6 
+Copying file /usr/lib/libQt6PrintSupport.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6PrintSupport.so.6 
+Copying file /usr/lib/libQt6WaylandClient.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6WaylandClient.so.6 
+Copying file /usr/lib/libQt6Widgets.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Widgets.so.6 
+Copying file /usr/lib/libQt6Xml.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Xml.so.6 
+Copying file /usr/lib/libXau.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXau.so.6 
+Copying file /usr/lib/libXdmcp.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXdmcp.so.6 
+Copying file /usr/lib/libb2.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libb2.so.1 
+Copying file /usr/lib/libblkid.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libblkid.so.1 
+Copying file /usr/lib/libbrotlicommon.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlicommon.so.1 
+Copying file /usr/lib/libbrotlidec.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlidec.so.1 
+Copying file /usr/lib/libbrotlienc.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlienc.so.1 
+Copying file /usr/lib/libbz2.so.1.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbz2.so.1.0 
+Copying file /usr/lib/libcrypto.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libcrypto.so.3 
+Copying file /usr/lib/libdbus-1.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdbus-1.so.3 
+Copying file /usr/lib/libdouble-conversion.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdouble-conversion.so.3 
+Copying file /usr/lib/libffi.so.8 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libffi.so.8 
+Copying file /usr/lib/libglib-2.0.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libglib-2.0.so.0 
+Copying file /usr/lib/libgomp.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgomp.so.1 
+Copying file /usr/lib/libgraphite2.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgraphite2.so.3 
+Copying file /usr/lib/libicudata.so.78 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicudata.so.78 
+Copying file /usr/lib/libicui18n.so.78 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicui18n.so.78 
+Copying file /usr/lib/libicuuc.so.78 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicuuc.so.78 
+Copying file /usr/lib/liblzma.so.5 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/liblzma.so.5 
+Copying file /usr/lib/libmd4c.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libmd4c.so.0 
+Copying file /usr/lib/libmount.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libmount.so.1 
+Copying file /usr/lib/libpcre2-16.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-16.so.0 
+Copying file /usr/lib/libpcre2-8.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-8.so.0 
+Copying file /usr/lib/libpng16.so.16 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpng16.so.16 
+Copying file /usr/lib/libsystemd.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libsystemd.so.0 
+Copying file /usr/lib/libudev.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libudev.so.1 
+Copying file /usr/lib/liburing.so.2 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/liburing.so.2 
+Copying file /usr/lib/libvterm.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libvterm.so.0 
+Copying file /usr/lib/libwayland-cursor.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libwayland-cursor.so.0 
+Copying file /usr/lib/libxkbcommon.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxkbcommon.so.0 
+Copying file /usr/lib/libzstd.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libzstd.so.1 
+WARNING: $NO_STRIP environment variable detected, not stripping binaries 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/bin/kgraphical-term to $ORIGIN/../lib 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6Archive.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6BreezeIcons.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6Codecs.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ColorScheme.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ConfigCore.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ConfigGui.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ConfigWidgets.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6CoreAddons.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6GlobalAccel.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6GuiAddons.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6I18n.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6IconThemes.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6IconWidgets.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6ItemViews.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6Pty.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6WidgetsAddons.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libKF6XmlGui.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Core.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6DBus.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Gui.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6PrintSupport.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6WaylandClient.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Widgets.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Xml.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXau.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXdmcp.so.6 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libb2.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libblkid.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlicommon.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlidec.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlienc.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbz2.so.1.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libcrypto.so.3 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdbus-1.so.3 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdouble-conversion.so.3 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libffi.so.8 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libglib-2.0.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgomp.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgraphite2.so.3 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicudata.so.78 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicui18n.so.78 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicuuc.so.78 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/liblzma.so.5 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libmd4c.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libmount.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-16.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-8.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpng16.so.16 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libsystemd.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libudev.so.1 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/liburing.so.2 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libvterm.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libwayland-cursor.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxkbcommon.so.0 to $ORIGIN 
+Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libzstd.so.1 to $ORIGIN 
+
+-- Running input plugin: qt -- 
+[qt/stdout] Using user specified qmake: /usr/bin/qmake6 
+[qt/stdout] Using qmake: /usr/bin/qmake6 
+[qt/stderr] linuxdeploy-plugin-qt version 1-alpha (git commit ID 9b9fca1), GitHub actions build 256 built on 2026-08-22 12:40:38 UTC
+[qt/stdout] 
+[qt/stdout] Using Qt version:  6.12.0  ( 6 ) 
+[qt/stdout]   libEGL.so.1  libGLX.so.0  libGLdispatch.so.0  libKF6Archive.so.6  libKF6BreezeIcons.so.6  libKF6Codecs.so.6  libKF6ColorScheme.so.6  libKF6ConfigCore.so.6  libKF6ConfigGui.so.6  libKF6ConfigWidgets.so.6  libKF6CoreAddons.so.6  libKF6GlobalAccel.so.6  libKF6GuiAddons.so.6  libKF6I18n.so.6  libKF6IconThemes.so.6  libKF6IconWidgets.so.6  libKF6ItemViews.so.6  libKF6Pty.so.6  libKF6WidgetsAddons.so.6  libKF6XmlGui.so.6  libOpenGL.so.0  libQt6Core.so.6  libQt6DBus.so.6  libQt6Gui.so.6  libQt6PrintSupport.so.6  libQt6WaylandClient.so.6  libQt6Widgets.so.6  libQt6Xml.so.6  libX11.so.6  libXau.so.6  libXdmcp.so.6  libb2.so.1  libblkid.so.1  libbrotlicommon.so.1  libbrotlidec.so.1  libbrotlienc.so.1  libbz2.so.1.0  libc.so.6  libcrypto.so.3  libdbus-1.so.3  libdouble-conversion.so.3  libexpat.so.1  libffi.so.8  libfontconfig.so.1  libfreetype.so.6  libgcc_s.so.1  libglib-2.0.so.0  libgomp.so.1  libgraphite2.so.3  libharfbuzz.so.0  libicudata.so.78  libicui18n.so.78  libicuuc.so.78  liblzma.so.5  libm.so.6  libmd4c.so.0  libmount.so.1  libpcre2-16.so.0  libpcre2-8.so.0  libpng16.so.16  libstdc++.so.6  libsystemd.so.0  libudev.so.1  liburing.so.2  libvterm.so.0  libwayland-client.so.0  libwayland-cursor.so.0  libxcb.so.1  libxkbcommon.so.0  libz.so.1  libzstd.so.1
+[qt/stdout] Found Qt modules: core dbus gui printsupport waylandclient widgets xml 
+[qt/stdout] Extra Qt modules:  
+[qt/stdout] 
+[qt/stdout] QT_INSTALL_LIBS: /usr/lib 
+[qt/stdout] Prepending QT_INSTALL_LIBS path to $LD_LIBRARY_PATH, new $LD_LIBRARY_PATH: /usr/lib: 
+[qt/stdout] Prepending QT_INSTALL_BINS and QT_INSTALL_LIBEXECS paths to $PATH, new $PATH: /usr/lib/qt6/bin:/usr/lib/qt6:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin 
+[qt/stdout] 
+[qt/stdout] -- Deploying module: core -- 
+[qt/stdout] 
+[qt/stdout] -- Deploying module: dbus -- 
+[qt/stdout] 
+[qt/stdout] -- Deploying module: gui -- 
+[qt/stdout] Deploying platform plugins 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/platforms/libqxcb.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforms/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/platforms/libqxcb.so 
+[qt/stdout] Deploying shared library /usr/lib/libQt6XcbQpa.so.6
+[qt/stdout] Deploying shared library /usr/lib/libQt6Gui.so.6
+[qt/stdout] Deploying shared library /usr/lib/libQt6Core.so.6
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libstdc++.so.6 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libc.so.6 
+[qt/stdout] Deploying shared library /usr/lib/libxcb-cursor.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-icccm.so.4
+[qt/stdout] Deploying shared library /usr/lib/libxcb-image.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-keysyms.so.1
+[qt/stdout] Deploying shared library /usr/lib/libxcb-randr.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-render.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-render-util.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-shape.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-shm.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-sync.so.1
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libxcb.so.1 
+[qt/stdout] Deploying shared library /usr/lib/libxcb-xfixes.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxcb-xkb.so.1
+[qt/stdout] Deploying shared library /usr/lib/libxkbcommon.so.0
+[qt/stdout] Deploying shared library /usr/lib/libglib-2.0.so.0
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libX11-xcb.so.1 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libX11.so.6 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libSM.so.6 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libICE.so.6 
+[qt/stdout] Deploying shared library /usr/lib/libxcb-xinput.so.0
+[qt/stdout] Deploying shared library /usr/lib/libxkbcommon-x11.so.0
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libm.so.6 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libgcc_s.so.1 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libEGL.so.1 
+[qt/stdout] Deploying shared library /usr/lib/libQt6DBus.so.6
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libGLX.so.0 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libOpenGL.so.0 
+[qt/stdout] Deploying shared library /usr/lib/libpng16.so.16
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libharfbuzz.so.0 
+[qt/stdout] Deploying shared library /usr/lib/libmd4c.so.0
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libfreetype.so.6 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libfontconfig.so.1 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libz.so.1 
+[qt/stdout] Deploying shared library /usr/lib/liburing.so.2
+[qt/stdout] Deploying shared library /usr/lib/libicui18n.so.78
+[qt/stdout] Deploying shared library /usr/lib/libicuuc.so.78
+[qt/stdout] Deploying shared library /usr/lib/libsystemd.so.0
+[qt/stdout] Deploying shared library /usr/lib/libdouble-conversion.so.3
+[qt/stdout] Deploying shared library /usr/lib/libb2.so.1
+[qt/stdout] Deploying shared library /usr/lib/libpcre2-16.so.0
+[qt/stdout] Deploying shared library /usr/lib/libcrypto.so.3
+[qt/stdout] Deploying shared library /usr/lib/libzstd.so.1
+[qt/stdout] Deploying shared library /usr/lib/libxcb-util.so.1
+[qt/stdout] Deploying shared library /usr/lib/libXau.so.6
+[qt/stdout] Deploying shared library /usr/lib/libXdmcp.so.6
+[qt/stdout] Deploying shared library /usr/lib/libpcre2-8.so.0
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libuuid.so.1 
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libGLdispatch.so.0 
+[qt/stdout] Deploying shared library /usr/lib/libdbus-1.so.3
+[qt/stdout] Deploying shared library /usr/lib/libgraphite2.so.3
+[qt/stdout] Deploying shared library /usr/lib/libbz2.so.1.0
+[qt/stdout] Deploying shared library /usr/lib/libbrotlidec.so.1
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libexpat.so.1 
+[qt/stdout] Deploying shared library /usr/lib/libicudata.so.78
+[qt/stdout] Deploying shared library /usr/lib/libgomp.so.1
+[qt/stdout] Deploying shared library /usr/lib/libbrotlienc.so.1
+[qt/stdout] Deploying shared library /usr/lib/libbrotlicommon.so.1
+[qt/stdout] Deploying Qt platforminputcontexts plugins 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforminputcontexts/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforminputcontexts/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so 
+[qt/stdout] Deploying Qt imageformats plugins 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/imageformats/libqico.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/imageformats/libqico.so 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/imageformats/libqgif.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/imageformats/libqgif.so 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/imageformats/libqsvg.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/imageformats/libqsvg.so 
+[qt/stdout] Deploying shared library /usr/lib/libQt6Svg.so.6
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/imageformats/libqjpeg.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/imageformats/libqjpeg.so 
+[qt/stdout] Deploying shared library /usr/lib/libjpeg.so.8
+[qt/stdout] Trying to deploy platform themes and style 
+[qt/stdout] Attempting to deploy libqxdgdesktopportal.so found at path /usr/lib/qt6/plugins/platformthemes 
+[qt/stdout] Deploying file /usr/lib/qt6/plugins/platformthemes/libqxdgdesktopportal.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platformthemes/libqxdgdesktopportal.so 
+[qt/stdout] Deploying xcb-gl integrations 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/xcbglintegrations/libqxcb-egl-integration.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/xcbglintegrations/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/xcbglintegrations/libqxcb-egl-integration.so 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/xcbglintegrations/libqxcb-glx-integration.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/xcbglintegrations/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/xcbglintegrations/libqxcb-glx-integration.so 
+[qt/stdout] Deploying shared library /usr/lib/libxcb-glx.so.0
+[qt/stdout] 
+[qt/stdout] -- Deploying module: printsupport -- 
+[qt/stdout] Deploying Qt printsupport plugins 
+[qt/stdout] Deploying shared library /usr/lib/qt6/plugins/printsupport/libcupsprintersupport.so (destination: /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/printsupport/)
+[qt/stdout] Deploying dependencies for ELF file /usr/lib/qt6/plugins/printsupport/libcupsprintersupport.so 
+[qt/stdout] Deploying shared library /usr/lib/libcups.so.2
+[qt/stdout] Deploying shared library /usr/lib/libQt6PrintSupport.so.6
+[qt/stdout] Deploying shared library /usr/lib/libQt6Widgets.so.6
+[qt/stdout] Deploying shared library /usr/lib/libavahi-common.so.3
+[qt/stdout] Deploying shared library /usr/lib/libavahi-client.so.3
+[qt/stdout] Deploying shared library /usr/lib/libgnutls.so.30
+[qt/stdout] Deploying shared library /usr/lib/libleancrypto.so.1.9
+[qt/stdout] Deploying shared library /usr/lib/libp11-kit.so.0
+[qt/stdout] Deploying shared library /usr/lib/libidn2.so.0
+[qt/stdout] Deploying shared library /usr/lib/libunistring.so.5
+[qt/stdout] Deploying shared library /usr/lib/libtasn1.so.6
+[qt/stdout] Deploying shared library /usr/lib/libhogweed.so.7
+[qt/stdout] Deploying shared library /usr/lib/libnettle.so.9
+[qt/stdout] Skipping deployment of blacklisted library /usr/lib/libgmp.so.10 
+[qt/stdout] Deploying shared library /usr/lib/libffi.so.8
+[qt/stdout] 
+[qt/stdout] -- Deploying module: waylandclient -- 
+[qt/stdout] 
+[qt/stdout] -- Deploying module: widgets -- 
+[qt/stdout] 
+[qt/stdout] -- Deploying module: xml -- 
+[qt/stdout] 
+[qt/stdout] -- Deploying translations -- 
+[qt/stdout] Qt translations directory: /usr/share/qt6/translations 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_zh_TW.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_zh_TW.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_ja.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ja.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_fr.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_fr.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_fi.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_fi.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_bg.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_bg.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_ru.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ru.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_nn.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_nn.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_tr.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_tr.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_pl.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_pl.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_es.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_es.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_hr.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_hr.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_zh_CN.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_zh_CN.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_nl.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_nl.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_sk.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_sk.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_cs.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_cs.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_ko.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ko.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_sv.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_sv.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_ca.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ca.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_da.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_da.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_pt_BR.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_pt_BR.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_hu.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_hu.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_ar.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ar.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_de.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_de.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_gd.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_gd.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_uk.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_uk.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_he.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_he.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_en.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_en.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_lg.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_lg.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_lv.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_lv.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_fa.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_fa.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_it.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_it.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_kk.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_kk.qm 
+[qt/stdout] Deploying file /usr/share/qt6/translations/qtbase_ka.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ka.qm 
+[qt/stdout] 
+[qt/stdout] -- Executing deferred operations -- 
+[qt/stdout] Copying file /usr/lib/libQt6Core.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Core.so.6 
+[qt/stdout] Copying file /usr/lib/libQt6DBus.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6DBus.so.6 
+[qt/stdout] Copying file /usr/lib/libQt6Gui.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Gui.so.6 
+[qt/stdout] Copying file /usr/lib/libQt6PrintSupport.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6PrintSupport.so.6 
+[qt/stdout] Copying file /usr/lib/libQt6Svg.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Svg.so.6 
+[qt/stdout] Copying file /usr/lib/libQt6Widgets.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Widgets.so.6 
+[qt/stdout] Copying file /usr/lib/libQt6XcbQpa.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6XcbQpa.so.6 
+[qt/stdout] Copying file /usr/lib/libXau.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXau.so.6 
+[qt/stdout] Copying file /usr/lib/libXdmcp.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXdmcp.so.6 
+[qt/stdout] Copying file /usr/lib/libavahi-client.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libavahi-client.so.3 
+[qt/stdout] Copying file /usr/lib/libavahi-common.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libavahi-common.so.3 
+[qt/stdout] Copying file /usr/lib/libb2.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libb2.so.1 
+[qt/stdout] Copying file /usr/lib/libbrotlicommon.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlicommon.so.1 
+[qt/stdout] Copying file /usr/lib/libbrotlidec.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlidec.so.1 
+[qt/stdout] Copying file /usr/lib/libbrotlienc.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlienc.so.1 
+[qt/stdout] Copying file /usr/lib/libbz2.so.1.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbz2.so.1.0 
+[qt/stdout] Copying file /usr/lib/libcrypto.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libcrypto.so.3 
+[qt/stdout] Copying file /usr/lib/libcups.so.2 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libcups.so.2 
+[qt/stdout] Copying file /usr/lib/libdbus-1.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdbus-1.so.3 
+[qt/stdout] Copying file /usr/lib/libdouble-conversion.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdouble-conversion.so.3 
+[qt/stdout] Copying file /usr/lib/libffi.so.8 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libffi.so.8 
+[qt/stdout] Copying file /usr/lib/libglib-2.0.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libglib-2.0.so.0 
+[qt/stdout] Copying file /usr/lib/libgnutls.so.30 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgnutls.so.30 
+[qt/stdout] Copying file /usr/lib/libgomp.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgomp.so.1 
+[qt/stdout] Copying file /usr/lib/libgraphite2.so.3 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgraphite2.so.3 
+[qt/stdout] Copying file /usr/lib/libhogweed.so.7 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libhogweed.so.7 
+[qt/stdout] Copying file /usr/lib/libicudata.so.78 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicudata.so.78 
+[qt/stdout] Copying file /usr/lib/libicui18n.so.78 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicui18n.so.78 
+[qt/stdout] Copying file /usr/lib/libicuuc.so.78 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicuuc.so.78 
+[qt/stdout] Copying file /usr/lib/libidn2.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libidn2.so.0 
+[qt/stdout] Copying file /usr/lib/libjpeg.so.8 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libjpeg.so.8 
+[qt/stdout] Copying file /usr/lib/libleancrypto.so.1.9 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libleancrypto.so.1.9 
+[qt/stdout] Copying file /usr/lib/libmd4c.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libmd4c.so.0 
+[qt/stdout] Copying file /usr/lib/libnettle.so.9 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libnettle.so.9 
+[qt/stdout] Copying file /usr/lib/libp11-kit.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libp11-kit.so.0 
+[qt/stdout] Copying file /usr/lib/libpcre2-16.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-16.so.0 
+[qt/stdout] Copying file /usr/lib/libpcre2-8.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-8.so.0 
+[qt/stdout] Copying file /usr/lib/libpng16.so.16 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpng16.so.16 
+[qt/stdout] Copying file /usr/lib/libsystemd.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libsystemd.so.0 
+[qt/stdout] Copying file /usr/lib/libtasn1.so.6 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libtasn1.so.6 
+[qt/stdout] Copying file /usr/lib/libunistring.so.5 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libunistring.so.5 
+[qt/stdout] Copying file /usr/lib/liburing.so.2 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/liburing.so.2 
+[qt/stdout] Copying file /usr/lib/libxcb-cursor.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-cursor.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-glx.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-glx.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-icccm.so.4 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-icccm.so.4 
+[qt/stdout] Copying file /usr/lib/libxcb-image.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-image.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-keysyms.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-keysyms.so.1 
+[qt/stdout] Copying file /usr/lib/libxcb-randr.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-randr.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-render-util.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-render-util.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-render.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-render.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-shape.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-shape.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-shm.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-shm.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-sync.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-sync.so.1 
+[qt/stdout] Copying file /usr/lib/libxcb-util.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-util.so.1 
+[qt/stdout] Copying file /usr/lib/libxcb-xfixes.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-xfixes.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-xinput.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-xinput.so.0 
+[qt/stdout] Copying file /usr/lib/libxcb-xkb.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-xkb.so.1 
+[qt/stdout] Copying file /usr/lib/libxkbcommon-x11.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxkbcommon-x11.so.0 
+[qt/stdout] Copying file /usr/lib/libxkbcommon.so.0 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxkbcommon.so.0 
+[qt/stdout] Copying file /usr/lib/libzstd.so.1 to /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libzstd.so.1 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/imageformats/libqgif.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqgif.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/imageformats/libqico.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqico.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/imageformats/libqjpeg.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqjpeg.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/imageformats/libqsvg.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqsvg.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/platforms/libqxcb.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforms/libqxcb.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/platformthemes/libqxdgdesktopportal.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platformthemes/libqxdgdesktopportal.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/printsupport/libcupsprintersupport.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/printsupport/libcupsprintersupport.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/xcbglintegrations/libqxcb-egl-integration.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/xcbglintegrations/libqxcb-egl-integration.so 
+[qt/stdout] Copying file /usr/lib/qt6/plugins/xcbglintegrations/libqxcb-glx-integration.so to /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/xcbglintegrations/libqxcb-glx-integration.so 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_ar.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ar.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_bg.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_bg.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_ca.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ca.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_cs.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_cs.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_da.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_da.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_de.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_de.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_en.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_en.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_es.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_es.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_fa.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_fa.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_fi.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_fi.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_fr.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_fr.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_gd.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_gd.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_he.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_he.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_hr.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_hr.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_hu.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_hu.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_it.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_it.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_ja.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ja.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_ka.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ka.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_kk.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_kk.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_ko.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ko.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_lg.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_lg.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_lv.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_lv.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_nl.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_nl.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_nn.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_nn.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_pl.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_pl.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_pt_BR.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_pt_BR.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_ru.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_ru.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_sk.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_sk.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_sv.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_sv.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_tr.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_tr.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_uk.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_uk.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_zh_CN.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_zh_CN.qm 
+[qt/stdout] Copying file /usr/share/qt6/translations/qtbase_zh_TW.qm to /__w/kgraphical-term/kgraphical-term/AppDir/usr/translations/qtbase_zh_TW.qm 
+[qt/stdout] WARNING: $NO_STRIP environment variable detected, not stripping binaries 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Core.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6DBus.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Gui.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6PrintSupport.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Svg.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6Widgets.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libQt6XcbQpa.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXau.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libXdmcp.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libavahi-client.so.3 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libavahi-common.so.3 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libb2.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlicommon.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlidec.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbrotlienc.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libbz2.so.1.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libcrypto.so.3 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libcups.so.2 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdbus-1.so.3 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libdouble-conversion.so.3 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libffi.so.8 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libglib-2.0.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgnutls.so.30 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgomp.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libgraphite2.so.3 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libhogweed.so.7 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicudata.so.78 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicui18n.so.78 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libicuuc.so.78 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libidn2.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libjpeg.so.8 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libleancrypto.so.1.9 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libmd4c.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libnettle.so.9 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libp11-kit.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-16.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpcre2-8.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libpng16.so.16 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libsystemd.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libtasn1.so.6 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libunistring.so.5 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/liburing.so.2 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-cursor.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-glx.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-icccm.so.4 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-image.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-keysyms.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-randr.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-render-util.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-render.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-shape.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-shm.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-sync.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-util.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-xfixes.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-xinput.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxcb-xkb.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxkbcommon-x11.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libxkbcommon.so.0 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/lib/libzstd.so.1 to $ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqgif.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqico.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqjpeg.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/imageformats/libqsvg.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforminputcontexts/libcomposeplatforminputcontextplugin.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforminputcontexts/libibusplatforminputcontextplugin.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/platforms/libqxcb.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/printsupport/libcupsprintersupport.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/xcbglintegrations/libqxcb-egl-integration.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] Setting rpath in ELF file /__w/kgraphical-term/kgraphical-term/AppDir/usr/plugins/xcbglintegrations/libqxcb-glx-integration.so to $ORIGIN/../../lib:$ORIGIN 
+[qt/stdout] 
+[qt/stdout] -- Creating qt.conf in AppDir -- 
+[qt/stdout] Creating Qt conf file: /__w/kgraphical-term/kgraphical-term/AppDir/usr/bin/qt.conf 
+[qt/stdout] 
+[qt/stdout] -- Note: skipping AppRun hook creation on Qt  6  -- 
+[qt/stdout] 
+[qt/stdout] Done! 
+
+-- Deploying icons -- 
+Deploying icon /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg 
+
+-- Deploying desktop files -- 
+Deploying desktop file /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/kgraphical-term.desktop 
+
+-- Copying files into AppDir -- 
+Copying file /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/kgraphical-term.desktop to /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/kgraphical-term.desktop 
+Copying file /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg to /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg 
+WARNING: $NO_STRIP environment variable detected, not stripping binaries 
+
+-- Deploying files into AppDir root directory -- 
+Deploying custom AppRun:  /__w/kgraphical-term/kgraphical-term/ci/AppRun 
+Deploying file /__w/kgraphical-term/kgraphical-term/ci/AppRun to /__w/kgraphical-term/kgraphical-term/AppDir/AppRun 
+Copying file /__w/kgraphical-term/kgraphical-term/ci/AppRun to /__w/kgraphical-term/kgraphical-term/AppDir/AppRun 
+WARNING: $NO_STRIP environment variable detected, not stripping binaries 
+Deploying files to AppDir root using desktop file: /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/kgraphical-term.desktop 
+Deploying desktop file to AppDir root: /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/kgraphical-term.desktop 
+Creating symlink for file /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/applications/kgraphical-term.desktop in/as /__w/kgraphical-term/kgraphical-term/AppDir 
+Deploying icon to AppDir root: /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg 
+Creating symlink for file /__w/kgraphical-term/kgraphical-term/AppDir/usr/share/icons/hicolor/scalable/apps/kgraphical-term.svg in/as /__w/kgraphical-term/kgraphical-term/AppDir 
+Deploying custom AppRun: /__w/kgraphical-term/kgraphical-term/ci/AppRun 
+Copying file /__w/kgraphical-term/kgraphical-term/ci/AppRun to /__w/kgraphical-term/kgraphical-term/AppDir/AppRun 
+Making AppRun file executable:  /__w/kgraphical-term/kgraphical-term/AppDir/AppRun 
+
+-- Running output plugin: appimage -- 
+[appimage/stdout] Found appimagetool: /tmp/appimage_extracted_3e47bb3598c757625f89e196368f9fc3/usr/bin/appimagetool
+[appimage/stdout] 
+[appimage/stderr] Running command: /tmp/appimage_extracted_3e47bb3598c757625f89e196368f9fc3/usr/bin/appimagetool "/__w/kgraphical-term/kgraphical-term/AppDir" "kgraphical-term-0.1.0-x86_64.AppImage"
+[appimage/stderr] 
+[appimage/stdout] WARNING: appstreamcli command is missing, please install it if you want to use AppStream metadata
+[appimage/stderr] appimagetool, continuous build (git version 8c8c91f), build 295 built on 2025-12-04 17:56:36 UTC
+[appimage/stdout] /__w/kgraphical-term/kgraphical-term/AppDir should be packaged as kgraphical-term-0.1.0-x86_64.AppImage
+[appimage/stderr] Using architecture x86_64
+[appimage/stderr] Deleting pre-existing .DirIcon
+[appimage/stderr] Creating .DirIcon symlink based on information from desktop file
+[appimage/stderr] WARNING: AppStream upstream metadata is missing, please consider creating it
+[appimage/stderr]          in usr/share/metainfo/kgraphical-term.appdata.xml
+[appimage/stderr]          Please see https://www.freedesktop.org/software/appstream/docs/chap-Quickstart.html#sect-Quickstart-DesktopApps
+[appimage/stderr]          for more information or use the generator at
+[appimage/stderr]          https://docs.appimage.org/packaging-guide/optional/appstream.html#using-the-appstream-generator
+[appimage/stderr] Generating squashfs...
+[appimage/stderr] Downloading runtime file from https://github.com/AppImage/type2-runtime/releases/download/continuous/runtime-x86_64
+[appimage/stderr] Downloaded runtime binary of size 944632
+[appimage/stdout] Parallel mksquashfs: Using 4 processors
+[appimage/stdout] Creating 4.0 filesystem on kgraphical-term-0.1.0-x86_64.AppImage, block size 131072.
+[appimage/stdout] [appimage/stdout] [=============================================================-] 1036/1036 100%[appimage/stderr] Embedding ELF...
+
+[appimage/stdout] 
+[appimage/stdout] Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072
+[appimage/stdout] 	compressed data, compressed metadata, compressed fragments,
+[appimage/stdout] 	compressed xattrs, compressed ids
+[appimage/stdout] 	duplicates are removed
+[appimage/stdout] Filesystem size 44029.35 Kbytes (43.00 Mbytes)
+[appimage/stdout] 	35.88% of uncompressed filesystem size (122728.05 Kbytes)
+[appimage/stdout] Inode table size 4392 bytes (4.29 Kbytes)
+[appimage/stdout] 	47.08% of uncompressed inode table size (9328 bytes)
+[appimage/stdout] Directory table size 1776 bytes (1.73 Kbytes)
+[appimage/stdout] 	44.31% of uncompressed directory table size (4008 bytes)
+[appimage/stdout] Number of duplicate files found 0
+[appimage/stdout] Number of inodes 166
+[appimage/stdout] Number of files 135
+[appimage/stdout] Number of fragments 26
+[appimage/stdout] Number of symbolic links 2
+[appimage/stdout] Number of device nodes 0
+[appimage/stdout] Number of fifo nodes 0
+[appimage/stdout] Number of socket nodes 0
+[appimage/stdout] Number of directories 29
+[appimage/stdout] Number of hard-links 0
+[appimage/stdout] Number of ids (unique uids + gids) 1
+[appimage/stdout] Number of uids 1
+[appimage/stdout] 	root (0)
+[appimage/stdout] Number of gids 1
+[appimage/stdout] 	root (0)
+[appimage/stderr] Marking the AppImage as executable...
+[appimage/stderr] Embedding MD5 digest
+[appimage/stderr] Success
+[appimage/stderr] 
+[appimage/stderr] Please consider submitting your AppImage to AppImageHub, the crowd-sourced
+[appimage/stderr] central directory of available AppImages, by opening a pull request
+[appimage/stderr] at https://github.com/AppImage/appimage.github.io
+total 44964
+drwxr-xr-x  2 root root     4096 Nov 10 03:21 .
+drwxr-xr-x 14 1001 1001     4096 Nov 10 03:21 ..
+-rwxr-xr-x  1 root root 46033400 Nov 10 03:21 kgraphical-term-0.1.0-x86_64.AppImage

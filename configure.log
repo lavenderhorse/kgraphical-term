@@ -1,0 +1,65 @@
+-- The CXX compiler identification is GNU 16.2.1
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/sbin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Installing in the same prefix as Qt, adopting their path scheme.
+-- Found Python3: /usr/sbin/python3.14 (found version "3.14.9") found components: Interpreter
+-- Could not set up the appstream test. appstreamcli is missing.
+-- Performing Test HAVE_STDATOMIC
+-- Performing Test HAVE_STDATOMIC - Success
+-- Found WrapAtomic: TRUE
+-- Found OpenGL: /usr/lib/libOpenGL.so
+-- Found WrapOpenGL: TRUE
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found XKB: /usr/lib/libxkbcommon.so (found suitable version "1.13.2", minimum required is "0.9.0")
+-- Found KF6CoreAddons: /usr/lib/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake (found version "6.31.0")
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+-- Found KF6Config: /usr/lib/cmake/KF6Config/KF6ConfigConfig.cmake (found version "6.31.0")
+-- Found KF6ConfigWidgets: /usr/lib/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake (found version "6.31.0")
+-- Found Gettext: /usr/sbin/msgmerge (found version "1.0")
+-- Found KF6I18n: /usr/lib/cmake/KF6I18n/KF6I18nConfig.cmake (found version "6.31.0")
+-- Found KF6XmlGui: /usr/lib/cmake/KF6XmlGui/KF6XmlGuiConfig.cmake (found version "6.31.0")
+-- Found KF6Pty: /usr/lib/cmake/KF6Pty/KF6PtyConfig.cmake (found version "6.31.0")
+-- Found KF6: success (found suitable version "6.31.0", minimum required is "6.0.0") found components: CoreAddons Config ConfigWidgets I18n XmlGui Pty
+-- Found PkgConfig: /usr/sbin/pkg-config (found version "3.0.10")
+-- Checking for module 'vterm>=0.3'
+--   Found vterm, version 0.3.3
+-- The following OPTIONAL packages have been found:
+
+ * Python3
+ * OpenGL
+ * Qt6ShaderToolsTools (required version >= 6.12.0)
+ * Qt6ShaderTools (required version >= 6.7.0)
+ * Qt6GuiPrivate (required version >= 6.7.0)
+ * Qt6QmlTools (required version >= 6.12.0)
+ * Qt6GuiTools (required version >= 6.12.0)
+ * Qt6WidgetsTools (required version >= 6.12.0)
+ * Qt6Widgets (required version >= 6.10.0)
+ * Qt6CoreTools (required version >= 6.12.0)
+ * Qt6DBusTools (required version >= 6.12.0)
+
+-- The following REQUIRED packages have been found:
+
+ * ECM (required version >= 6.0.0)
+ * Qt6 (required version >= 6.7.0)
+ * KF6Config (required version >= 6.31.0)
+ * Gettext
+ * KF6I18n (required version >= 6.0.0)
+ * KF6ConfigWidgets (required version >= 6.31.0)
+ * KF6XmlGui (required version >= 6.0.0)
+ * KF6CoreAddons (required version >= 6.31.0)
+ * KF6Pty (required version >= 6.0.0)
+ * KF6 (required version >= 6.0.0)
+ * PkgConfig
+
+-- The following OPTIONAL packages have not been found:
+
+ * Vulkan
+ * WrapVulkanHeaders
+ * Qt6QmlCompilerPlusPrivateTools (required version >= 6.12.0)
+
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /__w/kgraphical-term/kgraphical-term/build

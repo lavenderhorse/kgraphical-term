@@ -1,0 +1,37 @@
+kgraphical-term: renderer = vulkan
+qt.rhi.general: Initializing QRhi Vulkan backend 0x55c2c806f1a0 with flags 0
+qt.rhi.general: Enabled instance extensions:
+qt.rhi.general:   VK_KHR_get_physical_device_properties2
+qt.rhi.general:   VK_EXT_swapchain_colorspace
+qt.rhi.general:   VK_KHR_surface
+qt.rhi.general:   VK_KHR_portability_enumeration
+qt.rhi.general:   VK_EXT_debug_utils
+qt.rhi.general:   VK_KHR_xcb_surface
+qt.rhi.general: Physical device 0: 'llvmpipe (LLVM 23.1.4, 256 bits)' 26.2.6 (api 1.4.354 vendor 0x10005 device 0x0 type 4)
+qt.rhi.general:     using this physical device
+qt.rhi.general: 184 device extensions available
+qt.rhi.general: queue family 0: flags=0xf count=1
+qt.rhi.general: Enabling device extensions:
+qt.rhi.general:   VK_KHR_swapchain
+qt.rhi.general:   VK_EXT_vertex_attribute_divisor
+qt.rhi.general:   VK_KHR_create_renderpass2
+qt.rhi.general:   VK_KHR_depth_stencil_resolve
+qt.rhi.general: Using queue family index 0 and queue index 0
+qt.rhi.rub: [rub] new offscreen frame
+kgraphical-term: GPU renderer using Vulkan
+[rub] release to pool upd.batch # 0 / bufferOps active 1 of 1 data 32 largeAlloc 0 textureOps active 0 of 0
+[rub] release to pool upd.batch # 1 / bufferOps active 2 of 2 data 384 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new offscreen frame
+[rub] release to pool upd.batch # 2 / bufferOps active 2 of 2 data 384 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new offscreen frame
+[rub] release to pool upd.batch # 3 / bufferOps active 2 of 2 data 384 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new offscreen frame
+[rub] QRhiBufferData 0x7ffeebcb52e8/0x55c2c9eb07c0 new large data allocation 0 -> 39744
+[rub] release to pool upd.batch # 0 / bufferOps active 2 of 2 data 39808 largeAlloc 39744 textureOps active 90 of 90
+qt.rhi.general: Creating new swapchain of 3 buffers, size 900x560, presentation mode 2
+qt.rhi.rub: [rub] new frame
+[rub] release to pool upd.batch # 1 / bufferOps active 9 of 9 data 360 largeAlloc 0 textureOps active 1 of 1
+qt.rhi.rub: [rub] new frame
+[rub] release to pool upd.batch # 2 / bufferOps active 8 of 8 data 240 largeAlloc 0 textureOps active 0 of 0
+qt.rhi.rub: [rub] new frame
+[rub] release to pool upd.batch # 3 / bufferOps active 8 of 8 data 240 largeAlloc 0 textureOps active 0 of 0
