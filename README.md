@@ -7,6 +7,30 @@ A GPU-accelerated terminal emulator built on **KDE Frameworks 6** and **Qt 6**.
 - Window, menus, actions and shortcuts by **KXmlGui**, settings by **KConfig**, strings by **KI18n**
 - Rendering on **OpenGL** or **Vulkan** (via Qt's QRhi), with a QPainter software fallback
 
+## Download
+
+Every push to `main` builds an AppImage and publishes it to the
+[Releases](../../releases) page (the rolling **Continuous build**); pushing a `v*` tag
+publishes a regular release.
+
+```sh
+chmod +x kgraphical-term-*-x86_64.AppImage
+./kgraphical-term-*-x86_64.AppImage
+```
+
+The AppImage bundles Qt, KDE Frameworks and libvterm, and uses your system's graphics drivers.
+It is built on Arch Linux, so it needs a distribution with a recent glibc (the exact version is in
+each release's notes).
+
+## Screenshots
+
+Rendered in CI under Xvfb, with Mesa's software rasterisers standing in for a GPU
+(llvmpipe for OpenGL, lavapipe for Vulkan):
+
+| Software | OpenGL | Vulkan |
+| --- | --- | --- |
+| ![software](docs/screenshots/software.png) | ![opengl](docs/screenshots/opengl.png) | ![vulkan](docs/screenshots/vulkan.png) |
+
 ## Rendering
 
 The GPU path uses `QRhiWidget`, so one renderer and one set of shaders runs on both APIs:
@@ -82,6 +106,18 @@ cmake -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j
 ./build/bin/kgraphical-term        # or: sudo cmake --install build
 ```
+
+## Continuous integration
+
+`.github/workflows/ci.yml` runs on every push and pull request:
+
+1. Builds on Arch Linux (Qt ≥ 6.7 and KF6 are not in Ubuntu LTS).
+2. Launches the app under Xvfb with each backend (software, OpenGL, Vulkan), screenshots it and
+   fails if the backend did not initialise or the screenshot is blank.
+3. Packages an AppImage, launches it the same way, and publishes it to Releases.
+
+Logs and screenshots of the latest run are on the `ci-output` branch (overwritten on every run)
+and attached to the run as an artifact.
 
 ## Known limitations
 
